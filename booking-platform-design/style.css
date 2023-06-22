@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background-image: url("./background.jpg");
+  font-family: "Plus Jakarta Sans", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 1100px;
+  height: 700px;
+  display: flex;
+}
+
+.container-left {
+  background-color: #ffffff;
+  border: 10px solid #ffffff;
+  border-top-left-radius: 2em;
+  border-bottom-left-radius: 2em;
+  flex-grow: 1;
+}
+
+.container-right {
+  background: transparent;
+  border: 15px solid #ffffff;
+  border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;
+  flex-grow: 1.3;
+}
