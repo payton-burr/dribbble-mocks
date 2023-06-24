@@ -7,11 +7,48 @@
 body {
   margin: 0;
   height: 100vh;
-  background-image: url("./background.jpg");
-  font-family: "Plus Jakarta Sans", serif;
+  background-image: url("./images/background.jpg");
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+body,
+button {
+  font-family: "Plus Jakarta Sans", serif;
+}
+
+h1,
+p,
+button,
+ul {
+  margin: 0;
+}
+
+button,
+ul {
+  padding: 0;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+button {
+  border: none;
+}
+
+ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bg-small {
+  width: 30%;
 }
 
 .container {
@@ -20,12 +57,19 @@ body {
   display: flex;
 }
 
+.container-left,
+.container-right {
+  padding: 1.5em;
+}
+
 .container-left {
   background-color: #ffffff;
   border: 10px solid #ffffff;
   border-top-left-radius: 2em;
   border-bottom-left-radius: 2em;
-  flex-grow: 1;
+  border-right: none;
+  flex-grow: 1.3;
+  max-width: 45%;
 }
 
 .container-right {
@@ -34,4 +78,135 @@ body {
   border-top-right-radius: 2em;
   border-bottom-right-radius: 2em;
   flex-grow: 1.3;
+  max-width: 55%;
 }
+
+.header {
+  /* padding: 1.5em; */
+  font-size: 14px;
+}
+
+.navigation-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2em;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.logo a {
+  color: #000000;
+  font-weight: bold;
+}
+
+.navigation-item {
+  position: relative;
+}
+
+.navigation-item:not(:last-of-type) {
+  padding-right: 2em;
+}
+
+.navigation-item:not(:last-of-type)::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4rem;
+  width: 2px;
+  height: 0.8rem;
+  background-color: #ececec;
+}
+
+.navigation-link {
+  color: #000000;
+  font-weight: 700;
+}
+
+.current {
+  color: #bcbcbc;
+  font-weight: 400;
+}
+
+/* Heading, h1 and images */
+
+.heading-container {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 2rem;
+}
+
+.heading-container h1 {
+  flex-basis: 125%;
+}
+
+.heading-images {
+  align-self: flex-end;
+}
+
+.heading-image {
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.heading-image:first-child {
+  width: 60px;
+  height: 60px;
+}
+
+.heading-image:nth-child(2) {
+  width: 40px;
+  height: 40px;
+}
+
+.heading-image:last-child {
+  width: 50px;
+  height: 50px;
+}
+
+/* lead, h3 and border */
+
+.heading-lead {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.border-x {
+  height: 2px;
+  width: 55%;
+  background: #f4f4f4;
+}
+
+/* subheading, b, p, CTA black */
+
+.subheading-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.subheading-num {
+  font-size: 0.8rem;
+  margin-top: 2.4px;
+}
+
+.subheading-desc {
+  flex-basis: 60%;
+  font-size: 0.85rem;
+}
+
+.cta-black {
+  width: auto;
+  cursor: pointer;
+  align-self: center;
+  color: #ffffff;
+  background-color: #000000;
+  border-radius: 25px;
+  padding: 1em 3.5em;
+}
+
+/*  */
