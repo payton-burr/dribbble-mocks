@@ -284,6 +284,12 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1)
+  );
 }
 
 .container-right > div {
@@ -338,4 +344,37 @@ a {
   padding: 0.7em;
   border-radius: 50%;
   margin-top: 5px;
+}
+
+.container-right-info {
+  width: 80%;
+}
+
+.section-desc {
+  display: flex;
+  align-items: last baseline;
+  gap: 1rem;
+  color: #ffffff;
+}
+
+.section-desc .border-y {
+  height: 2.5rem;
+  background-color: #bcbcbc;
+}
+
+.section-cta {
+  margin-top: 2rem;
+  display: flex;
+}
+
+.cta-dropdown {
+  padding: 1em 2em;
+}
+
+.cta-search {
+  background-color: #000000;
+  padding: 0.8em 2.5em;
+  border: 1px solid white;
+  color: #ffffff;
+  margin-left: auto;
 }
