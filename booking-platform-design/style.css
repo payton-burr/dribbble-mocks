@@ -246,7 +246,7 @@ a {
 .other-house-container {
   position: relative;
   height: 35%;
-  margin-top: 2rem;
+  margin: 2rem 0;
 }
 
 .other-house {
@@ -254,4 +254,27 @@ a {
   height: 220px;
   object-fit: cover;
   border-radius: 15px;
+}
+
+.other-house:first-child {
+  position: relative;
+  z-index: 3;
+}
+
+.other-house:nth-child(2) {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  z-index: 2;
+  transform: scaleX(95%);
+  opacity: 0.9;
+}
+
+.other-house:nth-child(3) {
+  position: absolute;
+  left: 0;
+  top: 35px;
+  z-index: 1;
+  transform: scaleX(90%);
+  opacity: 0.7;
 }
