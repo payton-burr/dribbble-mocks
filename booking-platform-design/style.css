@@ -18,6 +18,10 @@ button {
   font-family: "Plus Jakarta Sans", serif;
 }
 
+main {
+  height: 100%;
+}
+
 h1,
 h2,
 h3,
